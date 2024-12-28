@@ -8,7 +8,9 @@ interface ResumeItemProps {
 export function ResumeItem({ icon: Icon, children }: ResumeItemProps) {
   return (
     <div className="flex items-start gap-4">
-      <Card
+      <Card placeholder=""
+        onPointerEnterCapture={() => { }}
+        onPointerLeaveCapture={() => { }}
         color="gray"
         className="h-12 w-12 shrink-0 items-center justify-center !rounded-lg"
       >

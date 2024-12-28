@@ -17,7 +17,10 @@ interface ProjectCardProps {
 
 export function ProjectCard({ img, title, desc, link_to_proj }: ProjectCardProps) {
   return (
-    <Card color="transparent" shadow={false}>
+    <Card placeholder=""
+      onPointerEnterCapture={() => { }}
+      onPointerLeaveCapture={() => { }}
+      color="transparent" shadow={false}>
       <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
         <Image
           src={img}
