@@ -14,7 +14,9 @@ export function ResumeItem({ icon: Icon, children }: ResumeItemProps) {
       >
         <Icon className="h-6 w-6" strokeWidth={2} />
       </Card>
-      <Typography className="w-full font-normal !text-gray-500">
+      <Typography placeholder=""
+        onPointerEnterCapture={() => { }}
+        onPointerLeaveCapture={() => { }} className="w-full font-normal !text-gray-500">
         {children}
       </Typography>
     </div>

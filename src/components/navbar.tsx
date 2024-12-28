@@ -33,6 +33,9 @@ function NavItem({ children, href }: NavItemProps) {
   return (
     <li>
       <Typography
+        placeholder=""
+        onPointerEnterCapture={() => { }}
+        onPointerLeaveCapture={() => { }}
         as="a"
         href={href || "#"}
         target={href ? "_blank" : "_self"}
@@ -61,7 +64,9 @@ export function Navbar() {
   return (
     <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold">
+        <Typography placeholder=""
+          onPointerEnterCapture={() => { }}
+          onPointerLeaveCapture={() => { }} color="blue-gray" className="text-lg font-bold">
           Harsh Kumar
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
