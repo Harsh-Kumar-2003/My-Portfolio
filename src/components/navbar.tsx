@@ -17,10 +17,12 @@ const NAV_MENU = [
   {
     name: "Page",
     icon: RectangleStackIcon,
+    href: "#",
   },
   {
     name: "Account",
     icon: UserCircleIcon,
+    href: "#",
   },
 ];
 
