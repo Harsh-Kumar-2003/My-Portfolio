@@ -62,7 +62,9 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
+    <MTNavbar placeholder=""
+      onPointerEnterCapture={() => { }}
+      onPointerLeaveCapture={() => { }} shadow={false} fullWidth className="border-0 sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between">
         <Typography placeholder=""
           onPointerEnterCapture={() => { }}
@@ -78,9 +80,13 @@ export function Navbar() {
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text">Sign In</Button>
+          <Button placeholder=""
+            onPointerEnterCapture={() => { }}
+            onPointerLeaveCapture={() => { }} variant="text">Sign In</Button>
         </div>
-        <IconButton
+        <IconButton placeholder=""
+          onPointerEnterCapture={() => { }}
+          onPointerLeaveCapture={() => { }}
           variant="text"
           color="gray"
           onClick={handleOpen}
@@ -104,7 +110,9 @@ export function Navbar() {
             ))}
           </ul>
           <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button variant="text">Sign In</Button>
+            <Button placeholder=""
+              onPointerEnterCapture={() => { }}
+              onPointerLeaveCapture={() => { }} variant="text">Sign In</Button>
           </div>
         </div>
       </Collapse>

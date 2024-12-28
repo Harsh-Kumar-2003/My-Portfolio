@@ -43,7 +43,9 @@ export function Resume() {
             websites and web applications.
           </Typography>
           <Link href="https://drive.google.com/file/d/18eaQGMVSMUiiNIw9lwKkhuUCPbvoiccb/view?usp=sharing">
-            <Button
+            <Button placeholder=""
+              onPointerEnterCapture={() => { }}
+              onPointerLeaveCapture={() => { }}
               variant="text"
               color="gray"
               className="flex items-center gap-2"

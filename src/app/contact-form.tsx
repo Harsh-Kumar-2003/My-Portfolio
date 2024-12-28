@@ -40,7 +40,9 @@ export function ContactForm() {
           onPointerEnterCapture={() => { }}
           onPointerLeaveCapture={() => { }}
           shadow={true} className="container mx-auto border border-gray/50">
-          <CardBody className="grid grid-cols-1 lg:grid-cols-7 md:gap-10">
+          <CardBody placeholder=""
+            onPointerEnterCapture={() => { }}
+            onPointerLeaveCapture={() => { }} className="grid grid-cols-1 lg:grid-cols-7 md:gap-10">
             <div className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 bg-gray-900">
               <Typography
                 placeholder=""
@@ -86,13 +88,19 @@ export function ContactForm() {
                 </Typography>
               </div>
               <div className="flex items-center gap-5">
-                <IconButton variant="text" color="white">
+                <IconButton placeholder=""
+                  onPointerEnterCapture={() => { }}
+                  onPointerLeaveCapture={() => { }} variant="text" color="white">
                   <i className="fa-brands fa-facebook text-lg" />
                 </IconButton>
-                <IconButton variant="text" color="white">
+                <IconButton placeholder=""
+                  onPointerEnterCapture={() => { }}
+                  onPointerLeaveCapture={() => { }} variant="text" color="white">
                   <i className="fa-brands fa-instagram text-lg" />
                 </IconButton>
-                <IconButton variant="text" color="white">
+                <IconButton placeholder=""
+                  onPointerEnterCapture={() => { }}
+                  onPointerLeaveCapture={() => { }} variant="text" color="white">
                   <i className="fa-brands fa-github text-lg" />
                 </IconButton>
               </div>
@@ -173,7 +181,9 @@ export function ContactForm() {
                   }}
                 />
                 <div className="w-full flex justify-end">
-                  <Button className="w-full md:w-fit" color="gray" size="md">
+                  <Button placeholder=""
+                    onPointerEnterCapture={() => { }}
+                    onPointerLeaveCapture={() => { }} className="w-full md:w-fit" color="gray" size="md">
                     Send message
                   </Button>
                 </div>

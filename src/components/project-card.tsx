@@ -21,7 +21,9 @@ export function ProjectCard({ img, title, desc, link_to_proj }: ProjectCardProps
       onPointerEnterCapture={() => { }}
       onPointerLeaveCapture={() => { }}
       color="transparent" shadow={false}>
-      <CardHeader floated={false} className="mx-0 mt-0 mb-6 h-48">
+      <CardHeader placeholder=""
+        onPointerEnterCapture={() => { }}
+        onPointerLeaveCapture={() => { }} floated={false} className="mx-0 mt-0 mb-6 h-48">
         <Image
           src={img}
           alt={title}
@@ -30,7 +32,9 @@ export function ProjectCard({ img, title, desc, link_to_proj }: ProjectCardProps
           className="h-full w-full object-cover"
         />
       </CardHeader>
-      <CardBody className="p-0">
+      <CardBody placeholder=""
+        onPointerEnterCapture={() => { }}
+        onPointerLeaveCapture={() => { }} className="p-0">
         <a
           href="#"
           className="text-blue-gray-900 transition-colors hover:text-gray-800"
@@ -47,7 +51,9 @@ export function ProjectCard({ img, title, desc, link_to_proj }: ProjectCardProps
           {desc}
         </Typography>
         <Link href={link_to_proj}>
-          <Button color="gray" size="sm">
+          <Button placeholder=""
+            onPointerEnterCapture={() => { }}
+            onPointerLeaveCapture={() => { }} color="gray" size="sm">
             See details
           </Button>
         </Link>
