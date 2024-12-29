@@ -34,7 +34,7 @@ function Hero() {
           width={1024}
           height={1024}
           alt="team work"
-          src="/image/myDp-img.png"
+          src="/image/myDp-img3.jpeg"
           className="h-[36rem] w-full rounded-xl object-cover"
         />
       </div>
