@@ -6,23 +6,22 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
+import { LinkedInLogo, GitHubLogo } from "../../public/logos/github-linkedin";
 import {
-  RectangleStackIcon,
-  UserCircleIcon,
   XMarkIcon,
   Bars3Icon,
 } from "@heroicons/react/24/solid";
 
 const NAV_MENU = [
   {
-    name: "Page",
-    icon: RectangleStackIcon,
-    href: "#",
+    name: "LinkedIn",
+    icon: LinkedInLogo,
+    href: "https://www.linkedin.com/in/harsh-kumar-b4560b228/",
   },
   {
-    name: "Account",
-    icon: UserCircleIcon,
-    href: "#",
+    name: "GitHub",
+    icon: GitHubLogo,
+    href: "https://github.com/Harsh-Kumar-2003",
   },
 ];
 
@@ -76,7 +75,7 @@ export function Navbar() {
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
           {NAV_MENU.map(({ name, icon: Icon, href }) => (
             <NavItem key={name} href={href}>
-              <Icon className="h-5 w-5" />
+              <Icon />
               {name}
             </NavItem>
           ))}
@@ -106,7 +105,7 @@ export function Navbar() {
           <ul className="flex flex-col gap-4">
             {NAV_MENU.map(({ name, icon: Icon }) => (
               <NavItem key={name}>
-                <Icon className="h-5 w-5" />
+                <Icon />
                 {name}
               </NavItem>
             ))}
